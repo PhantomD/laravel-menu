@@ -12,8 +12,8 @@
     "require": {
         "php": "^8.1",
         "illuminate/support": "^9.21|^10.0",
-        "illuminate/config": "self.version",
-        "illuminate/view": "self.version",
+        "illuminate/config": "^10.21",
+        "illuminate/view": "^10.21",
         "laravelcollective/html": "v6.4.1"
     },
     "authors": [
