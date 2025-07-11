@@ -1,5 +1,5 @@
 {
-    "name": "tasmir/laravel-menu",
+    "name": "phantomd/laravel-menu",
     "description": "Laravel Menu management",
     "keywords": [
         "laravel",
@@ -28,12 +28,12 @@
     ],
     "autoload": {
         "psr-4": {
-            "Tasmir\\Menus\\": "src"
+            "PhantomD\\Menus\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Tasmir\\Menus\\Tests\\": "Tests"
+            "PhantomD\\Menus\\Tests\\": "Tests"
         }
     },
     "require-dev": {
@@ -46,10 +46,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Tasmir\\Menus\\MenusServiceProvider"
+                "PhantomD\\Menus\\MenusServiceProvider"
             ],
             "aliases": {
-                "Menu": "Tasmir\\Menus\\Facades\\Menu"
+                "Menu": "PhantomD\\Menus\\Facades\\Menu"
             }
         }
     },
