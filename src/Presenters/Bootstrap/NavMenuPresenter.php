@@ -1,6 +1,6 @@
 <?php
 
-namespace Tasmir\Menus\Presenters\Bootstrap;
+namespace PhantomD\Menus\Presenters\Bootstrap;
 
 class NavMenuPresenter extends NavbarPresenter
 {
@@ -32,7 +32,7 @@ class NavMenuPresenter extends NavbarPresenter
     /**
      * Get multilevel menu wrapper.
      *
-     * @param \Tasmir\Menus\MenuItem $item
+     * @param \PhantomD\Menus\MenuItem $item
      *
      * @return string`
      */
