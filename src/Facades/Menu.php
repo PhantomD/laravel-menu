@@ -1,10 +1,10 @@
 <?php
 
-namespace Tasmir\Menus\Facades;
+namespace PhantomD\Menus\Facades;
 
 use Closure;
 use Illuminate\Support\Facades\Facade;
-use Tasmir\Menus\MenuBuilder;
+use PhantomD\Menus\MenuBuilder;
 
 /**
  * @method static MenuBuilder make($name, Closure $callback) Make new menu.
