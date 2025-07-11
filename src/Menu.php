@@ -42,7 +42,7 @@ class Menu implements Countable
      * @param string $name
      * @param Closure $callback
      *
-     * @return \Tasmir\Menus\MenuBuilder
+     * @return \PhantomD\Menus\MenuBuilder
      */
     public function make($name, \Closure $callback)
     {
@@ -55,7 +55,7 @@ class Menu implements Countable
      * @param string   $name
      * @param Callable $resolver
      *
-     * @return \Tasmir\Menus\MenuBuilder
+     * @return \PhantomD\Menus\MenuBuilder
      */
     public function create($name, Closure $resolver)
     {
