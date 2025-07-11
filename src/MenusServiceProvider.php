@@ -85,7 +85,7 @@ class MenusServiceProvider extends ServiceProvider
         ], 'config');
 
         $this->publishes([
-            $viewsPath => base_path('resources/views/vendor/tasmir/menus'),
+            $viewsPath => base_path('resources/views/vendor/phantomd/menus'),
         ], 'views');
     }
 }
