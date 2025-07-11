@@ -1,8 +1,8 @@
 <?php
 
-namespace Tasmir\Menus\Presenters\Bootstrap;
+namespace PhantomD\Menus\Presenters\Bootstrap;
 
-use Tasmir\Menus\Presenters\Presenter;
+use PhantomD\Menus\Presenters\Presenter;
 
 class NavbarPresenter extends Presenter
 {
