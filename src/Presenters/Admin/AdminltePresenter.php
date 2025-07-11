@@ -1,8 +1,8 @@
 <?php
 
-namespace Tasmir\Menus\Presenters\Admin;
+namespace PhantomD\Menus\Presenters\Admin;
 
-use Tasmir\Menus\Presenters\Presenter;
+use PhantomD\Menus\Presenters\Presenter;
 
 class AdminltePresenter extends Presenter
 {
