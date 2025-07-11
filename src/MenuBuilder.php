@@ -121,7 +121,7 @@ class MenuBuilder implements Countable
      *
      * @param  string $key
      * @param  string $value
-     * @return \Tasmir\Menus\MenuItem
+     * @return \PhantomD\Menus\MenuItem
      */
     public function findBy($key, $value)
     {
@@ -195,7 +195,7 @@ class MenuBuilder implements Countable
     /**
      * Get presenter instance.
      *
-     * @return \Tasmir\Menus\Presenters\PresenterInterface
+     * @return \PhantomD\Menus\Presenters\PresenterInterface
      */
     public function getPresenter()
     {
@@ -325,7 +325,7 @@ class MenuBuilder implements Countable
      *
      * @param array $attributes
      *
-     * @return \Tasmir\Menus\MenuItem
+     * @return \PhantomD\Menus\MenuItem
      */
     public function add(array $attributes = array())
     {
@@ -448,7 +448,7 @@ class MenuBuilder implements Countable
      * Add new divider item.
      *
      * @param int $order
-     * @return \Tasmir\Menus\MenuItem
+     * @return \PhantomD\Menus\MenuItem
      */
     public function addDivider($order = null)
     {
