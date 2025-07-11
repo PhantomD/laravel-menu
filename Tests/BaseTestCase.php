@@ -1,9 +1,9 @@
 <?php
 
-namespace Tasmir\Menus\Tests;
+namespace PhantomD\Menus\Tests;
 
 use Collective\Html\HtmlServiceProvider;
-use Tasmir\Menus\MenusServiceProvider;
+use PhantomD\Menus\MenusServiceProvider;
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
 
 abstract class BaseTestCase extends OrchestraTestCase
@@ -32,12 +32,12 @@ abstract class BaseTestCase extends OrchestraTestCase
     {
         $app['config']->set('menus', [
             'styles' => [
-                'navbar' => \Tasmir\Menus\Presenters\Bootstrap\NavbarPresenter::class,
-                'navbar-right' => \Tasmir\Menus\Presenters\Bootstrap\NavbarRightPresenter::class,
-                'nav-pills' => \Tasmir\Menus\Presenters\Bootstrap\NavPillsPresenter::class,
-                'nav-tab' => \Tasmir\Menus\Presenters\Bootstrap\NavTabPresenter::class,
-                'sidebar' => \Tasmir\Menus\Presenters\Bootstrap\SidebarMenuPresenter::class,
-                'navmenu' => \Tasmir\Menus\Presenters\Bootstrap\NavMenuPresenter::class,
+                'navbar' => \PhantomD\Menus\Presenters\Bootstrap\NavbarPresenter::class,
+                'navbar-right' => \PhantomD\Menus\Presenters\Bootstrap\NavbarRightPresenter::class,
+                'nav-pills' => \PhantomD\Menus\Presenters\Bootstrap\NavPillsPresenter::class,
+                'nav-tab' => \PhantomD\Menus\Presenters\Bootstrap\NavTabPresenter::class,
+                'sidebar' => \PhantomD\Menus\Presenters\Bootstrap\SidebarMenuPresenter::class,
+                'navmenu' => \PhantomD\Menus\Presenters\Bootstrap\NavMenuPresenter::class,
             ],
 
             'ordering' => false,
