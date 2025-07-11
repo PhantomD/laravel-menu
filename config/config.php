@@ -3,14 +3,14 @@
 return [
 
     'styles' => [
-        'navbar' => \Tasmir\Menus\Presenters\Bootstrap\NavbarPresenter::class,
-        'navbar-right' => \Tasmir\Menus\Presenters\Bootstrap\NavbarRightPresenter::class,
-        'nav-pills' => \Tasmir\Menus\Presenters\Bootstrap\NavPillsPresenter::class,
-        'nav-tab' => \Tasmir\Menus\Presenters\Bootstrap\NavTabPresenter::class,
-        'sidebar' => \Tasmir\Menus\Presenters\Bootstrap\SidebarMenuPresenter::class,
-        'navmenu' => \Tasmir\Menus\Presenters\Bootstrap\NavMenuPresenter::class,
-        'adminlte' => \Tasmir\Menus\Presenters\Admin\AdminltePresenter::class,
-        'zurbmenu' => \Tasmir\Menus\Presenters\Foundation\ZurbMenuPresenter::class,
+        'navbar' => \PhantomD\Menus\Presenters\Bootstrap\NavbarPresenter::class,
+        'navbar-right' => \PhantomD\Menus\Presenters\Bootstrap\NavbarRightPresenter::class,
+        'nav-pills' => \PhantomD\Menus\Presenters\Bootstrap\NavPillsPresenter::class,
+        'nav-tab' => \PhantomD\Menus\Presenters\Bootstrap\NavTabPresenter::class,
+        'sidebar' => \PhantomD\Menus\Presenters\Bootstrap\SidebarMenuPresenter::class,
+        'navmenu' => \PhantomD\Menus\Presenters\Bootstrap\NavMenuPresenter::class,
+        'adminlte' => \PhantomD\Menus\Presenters\Admin\AdminltePresenter::class,
+        'zurbmenu' => \PhantomD\Menus\Presenters\Foundation\ZurbMenuPresenter::class,
     ],
 
     'ordering' => true,
