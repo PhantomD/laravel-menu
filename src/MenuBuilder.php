@@ -1,6 +1,6 @@
 <?php
 
-namespace Tasmir\Menus;
+namespace PhantomD\Menus;
 
 use Countable;
 use Illuminate\Contracts\Config\Repository;
