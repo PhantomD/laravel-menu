@@ -1,6 +1,6 @@
 <?php
 
-namespace Tasmir\Menus;
+namespace PhantomD\Menus;
 
 use Closure;
 use Countable;
