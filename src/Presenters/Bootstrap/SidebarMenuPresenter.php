@@ -1,9 +1,9 @@
 <?php
 
-namespace Tasmir\Menus\Presenters\Bootstrap;
+namespace PhantomD\Menus\Presenters\Bootstrap;
 
 use Illuminate\Support\Str;
-use Tasmir\Menus\Presenters\Presenter;
+use PhantomD\Menus\Presenters\Presenter;
 
 class SidebarMenuPresenter extends Presenter
 {
