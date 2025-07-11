@@ -89,7 +89,7 @@ class AdminltePresenter extends Presenter
     /**
      * Get multilevel menu wrapper.
      *
-     * @param \Tasmir\Menus\MenuItem $item
+     * @param \PhantomD\Menus\MenuItem $item
      *
      * @return string`
      */
