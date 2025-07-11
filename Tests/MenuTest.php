@@ -1,9 +1,9 @@
 <?php
 
-namespace Tasmir\Menus\Tests;
+namespace PhantomD\Menus\Tests;
 
-use Tasmir\Menus\Menu;
-use Tasmir\Menus\MenuBuilder;
+use PhantomD\Menus\Menu;
+use PhantomD\Menus\MenuBuilder;
 
 class MenuTest extends BaseTestCase
 {
