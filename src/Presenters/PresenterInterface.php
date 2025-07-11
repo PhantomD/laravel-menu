@@ -23,7 +23,7 @@ interface PresenterInterface
     /**
      * Get menu tag without dropdown wrapper.
      *
-     * @param \Tasmir\Menus\MenuItem $item
+     * @param \PhantomD\Menus\MenuItem $item
      *
      * @return string
      */
@@ -39,7 +39,7 @@ interface PresenterInterface
     /**
      * Get divider tag wrapper.
      *
-     * @param \Tasmir\Menus\MenuItem $item
+     * @param \PhantomD\Menus\MenuItem $item
      *
      * @return mixed
      */
@@ -48,7 +48,7 @@ interface PresenterInterface
     /**
      * Get menu tag with dropdown wrapper.
      *
-     * @param \Tasmir\Menus\MenuItem $item
+     * @param \PhantomD\Menus\MenuItem $item
      *
      * @return string
      */
@@ -57,7 +57,7 @@ interface PresenterInterface
     /**
      * Get child menu items.
      *
-     * @param \Tasmir\Menus\MenuItem $item
+     * @param \PhantomD\Menus\MenuItem $item
      *
      * @return string
      */
