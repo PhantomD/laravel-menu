@@ -1,8 +1,8 @@
 <?php
 
-namespace Tasmir\Menus\Presenters;
+namespace PhantomD\Menus\Presenters;
 
-use Tasmir\Menus\MenuItem;
+use PhantomD\Menus\MenuItem;
 
 interface PresenterInterface
 {
