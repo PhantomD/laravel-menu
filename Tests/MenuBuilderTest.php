@@ -1,10 +1,10 @@
 <?php
 
-namespace Tasmir\Menus\Tests;
+namespace PhantomD\Menus\Tests;
 
 use Illuminate\Config\Repository;
-use Tasmir\Menus\MenuBuilder;
-use Tasmir\Menus\MenuItem;
+use PhantomD\Menus\MenuBuilder;
+use PhantomD\Menus\MenuItem;
 
 class MenuBuilderTest extends BaseTestCase
 {
