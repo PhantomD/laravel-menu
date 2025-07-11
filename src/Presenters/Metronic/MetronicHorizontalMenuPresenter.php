@@ -8,7 +8,7 @@
 
 namespace App\Presenters;
 
-use Tasmir\Menus\Presenters\Presenter;
+use PhantomD\Menus\Presenters\Presenter;
 
 class MetronicHorizontalMenuPresenter extends Presenter
 {
