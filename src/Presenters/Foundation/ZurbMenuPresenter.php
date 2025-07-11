@@ -1,8 +1,8 @@
 <?php
 
-namespace Tasmir\Menus\Presenters\Foundation;
+namespace PhantomD\Menus\Presenters\Foundation;
 
-use Tasmir\Menus\Presenters\Presenter;
+use PhantomD\Menus\Presenters\Presenter;
 
 class ZurbMenuPresenter extends Presenter
 {
