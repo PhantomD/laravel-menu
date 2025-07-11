@@ -30,7 +30,7 @@ class SidebarMenuPresenter extends Presenter
     /**
      * Get menu tag without dropdown wrapper.
      *
-     * @param \Tasmir\Menus\MenuItem $item
+     * @param \PhantomD\Menus\MenuItem $item
      *
      * @return string
      */
@@ -104,7 +104,7 @@ class SidebarMenuPresenter extends Presenter
     /**
      * Get multilevel menu wrapper.
      *
-     * @param \Tasmir\Menus\MenuItem $item
+     * @param \PhantomD\Menus\MenuItem $item
      *
      * @return string`
      */
