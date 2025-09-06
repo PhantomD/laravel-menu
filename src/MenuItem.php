@@ -22,19 +22,30 @@ use Illuminate\Support\Str;
  */
 class MenuItem implements ArrayableContract
 {
+    public ?string $url = null;
+    public ?array  $route = null;       // [name, params]
+    public ?string $title = null;
+    public ?string $name = null;
+    public ?string $icon = null;
+    public ?int    $parent = null;
+    public array   $attributes = [];    // HTML attributes, plus 'active'/'inactive' flags
+    public bool    $active = false;
+    public ?int    $order = null;
+    
     /**
      * Array properties.
      *
      * @var array
      */
-    protected $properties = [];
+    protected array $properties = [];
 
     /**
      * The child collections for current menu item.
      *
      * @var array
      */
-    protected $childs = array();
+    protected array $childs = [];
+    protected ?\Closure $hideWhen = null;
 
     /**
      * The fillable attribute.
@@ -638,6 +649,11 @@ class MenuItem implements ArrayableContract
      */
     public function __get($key)
     {
-        return isset($this->$key) ? $this->$key : null;
+        // Prefer declared properties if they exist
+        if (property_exists($this, $key)) {
+            return $this->$key;
+        }
+        // Fallback to the original input bag
+        return $this->properties[$key] ?? null;
     }
 }
