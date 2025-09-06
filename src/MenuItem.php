@@ -45,7 +45,6 @@ class MenuItem implements ArrayableContract
      * @var array
      */
     protected array $childs = [];
-    protected ?\Closure $hideWhen = null;
 
     /**
      * The fillable attribute.
