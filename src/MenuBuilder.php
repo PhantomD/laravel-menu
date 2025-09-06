@@ -93,7 +93,7 @@ class MenuBuilder implements Countable
      *
      * @return string
      */
-    public function getName()
+    public function getName(): string
     {
         return $this->menu;
     }
@@ -225,7 +225,7 @@ class MenuBuilder implements Countable
      *
      * @return bool
      */
-    public function hasStyle($name)
+    public function hasStyle($name): bool
     {
         return array_key_exists($name, $this->getStyles());
     }
@@ -235,7 +235,7 @@ class MenuBuilder implements Countable
      *
      * @return mixed
      */
-    public function getStyles()
+    public function getStyles(): array
     {
         return $this->styles ?: $this->config->get('menus.styles');
     }
@@ -247,7 +247,7 @@ class MenuBuilder implements Countable
      *
      * @return mixed
      */
-    public function getStyle($name)
+    public function getStyle($name): string
     {
         $style = $this->getStyles();
 
@@ -270,7 +270,7 @@ class MenuBuilder implements Countable
      * @param array $bindings
      * @return $this
      */
-    public function setBindings(array $bindings)
+    public function setBindings(array $bindings): self
     {
         $this->bindings = $bindings;
 
@@ -450,7 +450,7 @@ class MenuBuilder implements Countable
      * @param int $order
      * @return \PhantomD\Menus\MenuItem
      */
-    public function addDivider($order = null)
+    public function addDivider($order = null): self
     {
         $this->items[] = new MenuItem(array('name' => 'divider', 'order' => $order));
 
@@ -462,7 +462,7 @@ class MenuBuilder implements Countable
      *
      * @return \Tasmir\Menus\MenuItem
      */
-    public function addHeader($title, $order = null)
+    public function addHeader($title, $order = null): self
     {
         $this->items[] = new MenuItem(array(
             'name' => 'header',
@@ -500,7 +500,7 @@ class MenuBuilder implements Countable
      *
      * @return int
      */
-    public function count()
+    public function count(): int
     {
         return count($this->items);
     }
@@ -508,7 +508,7 @@ class MenuBuilder implements Countable
     /**
      * Empty the current menu items.
      */
-    public function destroy()
+    public function destroy(): self
     {
         $this->items = array();
 
@@ -558,7 +558,7 @@ class MenuBuilder implements Countable
      *
      * @return array
      */
-    public function getItems()
+    public function getItems(): array
     {
         return $this->items;
     }
@@ -578,7 +578,7 @@ class MenuBuilder implements Countable
      *
      * @return array
      */
-    public function toArray()
+    public function toArray(): array
     {
         return $this->toCollection()->toArray();
     }
@@ -588,7 +588,7 @@ class MenuBuilder implements Countable
      *
      * @return self
      */
-    public function enableOrdering()
+    public function enableOrdering(): self
     {
         $this->ordering = true;
 
@@ -600,7 +600,7 @@ class MenuBuilder implements Countable
      *
      * @return self
      */
-    public function disableOrdering()
+    public function disableOrdering(): self
     {
         $this->ordering = false;
 
@@ -612,7 +612,7 @@ class MenuBuilder implements Countable
      *
      * @return array
      */
-    public function getOrderedItems()
+    public function getOrderedItems(): array
     {
         if (config('menus.ordering') || $this->ordering) {
             return $this->toCollection()->sortBy(function ($item) {
